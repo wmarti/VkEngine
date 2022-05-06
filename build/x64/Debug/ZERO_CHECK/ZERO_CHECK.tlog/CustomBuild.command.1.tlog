@@ -1,0 +1,10 @@
+^C:\USERS\WMART\DOCUMENTS\VKENGINE\BUILD\CMAKEFILES\2BBD474F080D24A97F33847858CD93C9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/wmart/Documents/VkEngine -BC:/Users/wmart/Documents/VkEngine/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/wmart/Documents/VkEngine/build/VkEngine.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
